@@ -31,10 +31,12 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute<void>(
-                        builder: (BuildContext context) => SearchScreen()));
+                        builder: (BuildContext context) =>
+                            SearchScreen()),
+                    (Route<dynamic> route) => false);
               },
               icon: const Icon(Icons.search)),
         ],

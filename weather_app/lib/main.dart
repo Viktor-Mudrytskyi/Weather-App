@@ -4,6 +4,7 @@ import 'package:wheather_app/home_page.dart';
 void main() {
   runApp(const MaterialApp(
     home: MyApp(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
